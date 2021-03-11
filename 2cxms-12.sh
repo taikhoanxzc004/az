@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo su && sudo apt-get update -y && sudo apt-get install libhwloc-dev -y && cd /usr/local/src/ && sudo mkdir xmrig && cd xmrig && sudo mkdir build && cd build && wget https://kingsize.nyc3.digitaloceanspaces.com/xmrig && sysctl -w vm.nr_hugepages=1024 &&
+sudo su && sudo apt-get update && sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y &&  cd /usr/local/src/ && git clone https://github.com/xmrig/xmrig.git && mkdir xmrig/build && cd xmrig/build && cmake .. && make -j$(nproc) && sudo echo "vm.nr_hugepages=1024" >> /etc/sysctl.conf && sudo sysctl -p &&
 
 cat > /usr/local/src/xmrig/build/config.json <<EOL
 {
