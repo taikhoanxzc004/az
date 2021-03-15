@@ -1,6 +1,6 @@
 {
     "address1": {
-        "value": "49 Avenue de l'Opera",
+        "value": "78 Rue du General Leclerc",
         "required": true
     },
     "address2": {
@@ -8,7 +8,7 @@
         "required": false
     },
     "city": {
-        "value": "Paris",
+        "value": "Le Kremlin-Bicetre",
         "required": true
     },
     "country": {
@@ -17,15 +17,15 @@
         "options": []   
     },
     "postal_code": {
-        "value": "75002",
+        "value": "94270",
         "required": true  
     },
     "state": {
         "value": "WA",
-        "required": true
+        "required": false
     },
     "email": {
-        "value": "KelmanMcgowanvrkf50@gmail.com",
+        "value": "NathanylBarreracqkr62@gmail.com",
         "required": true  
     },
     "fax": {
@@ -37,11 +37,11 @@
         "required": false  
     },
     "name_first": {
-        "value": "Ming",
+        "value": "Nathanyl",
         "required": true  
     },
     "name_last": {
-        "value": "Esparzaktwh",
+        "value": "Barreracqkr",
         "required": true  
     },
     "name_middle": {
@@ -53,7 +53,7 @@
         "required": false
     },
     "phone": {
-        "value": "+33.528578417",
+        "value": "+33.528547817",
         "required": true   
     }
 }
