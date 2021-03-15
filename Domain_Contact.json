@@ -1,0 +1,59 @@
+{
+    "address1": {
+        "value": "65 Avenue Kléber",
+        "required": true
+    },
+    "address2": {
+        "value": "Unit/Apt",
+        "required": false
+    },
+    "city": {
+        "value": "Paris",
+        "required": true
+    },
+    "country": {
+        "value": "FR",
+        "required": true,
+        "options": []   
+    },
+    "postal_code": {
+        "value": "75116",
+        "required": true  
+    },
+    "state": {
+        "value": "WA",
+        "required": true
+    },
+    "email": {
+        "value": "MingEsparzaktwh52@gmail.com",
+        "required": true  
+    },
+    "fax": {
+        "value": "+1.0000000000",
+        "required": false   
+    },
+    "job_title": {
+        "value": "Job title",
+        "required": false  
+    },
+    "name_first": {
+        "value": "Ming",
+        "required": true  
+    },
+    "name_last": {
+        "value": "Esparzaktwh",
+        "required": true  
+    },
+    "name_middle": {
+        "value": "Middle name",
+        "required": false
+    },
+    "organization": {
+        "value": "Organization",
+        "required": false
+    },
+    "phone": {
+        "value": "+33.523578417",
+        "required": true   
+    }
+}
