@@ -1,6 +1,6 @@
 {
     "address1": {
-        "value": "65 Avenue Kleber",
+        "value": "49 Avenue de l'Opera",
         "required": true
     },
     "address2": {
@@ -17,7 +17,7 @@
         "options": []   
     },
     "postal_code": {
-        "value": "75116",
+        "value": "75002",
         "required": true  
     },
     "state": {
@@ -25,7 +25,7 @@
         "required": true
     },
     "email": {
-        "value": "MingEsparzaktwh52@gmail.com",
+        "value": "KelmanMcgowanvrkf50@gmail.com",
         "required": true  
     },
     "fax": {
@@ -53,7 +53,7 @@
         "required": false
     },
     "phone": {
-        "value": "+33.523578417",
+        "value": "+33.528578417",
         "required": true   
     }
 }
