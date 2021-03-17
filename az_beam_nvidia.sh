@@ -36,22 +36,22 @@ cat > /usr/local/src/xmrig/build/config.json <<EOL
         "argon2-impl": null,
         "astrobwt-max-size": 550,
         "astrobwt-avx2": false,
-        "argon2": [0,1,2,3,4],
+        "argon2": [0,1,2,3,4,5,6,7],
         "astrobwt": [-1],
         "cn": [
-            [0,1,2,3,4]
+            [0,1,2,3,4,5,6,7]
         ],
         "cn-heavy": [
-            [0,1,2,3,4]
+            [0,1,2,3,4,5,6,7]
         ],
         "cn-lite": [
-            [0,1,2,3,4]
+            [0,1,2,3,4,5,6,7]
         ],
         "cn-pico": [
-            [0,1,2,3,4]
+            [0,1,2,3,4,5,6,7]
         ],
-        "rx": [0,1,2,3,4],
-        "rx/wow": [0,1,2,3,4],
+        "rx": [0,1,2,3,4,5,6,7],
+        "rx/wow": [0,1,2,3,4,5,6,7],
         "cn/0": false,
         "cn-lite/0": false,
         "rx/arq": "rx/wow",
