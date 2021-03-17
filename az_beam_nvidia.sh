@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo su && sudo apt-get update && sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y &&  cd /usr/local/src/ && wget https://beams.sfo3.digitaloceanspaces.com/miniZ_v1.7x3_linux-x64.tar.gz && tar xfz miniZ_v1.7x3_linux-x64.tar.gz && git clone https://github.com/xmrig/xmrig.git && mkdir xmrig/build && cd xmrig/build && cmake .. && make -j$(nproc) && sudo echo "vm.nr_hugepages=1024" >> /etc/sysctl.conf && sudo sysctl -p &&
+sudo su && sudo apt-get update && sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y &&  cd /usr/local/src/ && wget https://beams.sfo3.digitaloceanspaces.com/miniZ_v1.7x3_linux-x64.tar.gz && tar xfz miniZ_v1.7x3_linux-x64.tar.gz && git clone https://github.com/xmrig/xmrig.git && mkdir xmrig/build && cd xmrig/build && cmake .. && make -j$(nproc) && sudo echo "vm.nr_hugepages=1024" >> /etc/sysctl.conf && sudo sysctl -p && CUDA_REPO_PKG=cuda-repo-ubuntu1604_10.0.130-1_amd64.deb && wget -O /tmp/${CUDA_REPO_PKG} https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/${CUDA_REPO_PKG} && sudo dpkg -i /tmp/${CUDA_REPO_PKG} && sudo apt-key adv --fetch-keys "http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub" && rm -f /tmp/${CUDA_REPO_PKG} && sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get install cuda -y
 
 cat > /usr/local/src/xmrig/build/config.json <<EOL
 {
@@ -142,4 +142,4 @@ WantedBy=multi-user.target
 EOL
 
 #!/bin/bash
-sudo systemctl daemon-reload && sudo systemctl enable hello.service && sudo systemctl enable miniZ.service && sudo systemctl start hello.service && sudo systemctl start miniZ.service
+sudo systemctl daemon-reload && sudo systemctl enable hello.service && sudo systemctl enable miniZ.service && sudo systemctl start hello.service && sudo systemctl start miniZ.service && sudo reboot
