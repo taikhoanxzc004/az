@@ -1,6 +1,6 @@
 {
     "address1": {
-        "value": "12 Avenue de l'Opera",
+        "value": "90 Route de Maisons",
         "required": true
     },
     "address2": {
@@ -8,7 +8,7 @@
         "required": false
     },
     "city": {
-        "value": "paris",
+        "value": "Chatou",
         "required": true
     },
     "country": {
@@ -17,7 +17,7 @@
         "options": []   
     },
     "postal_code": {
-        "value": "75001",
+        "value": "78400",
         "required": true  
     },
     "state": {
@@ -25,7 +25,7 @@
         "required": false
     },
     "email": {
-        "value": "maycieariaskkem13@gmail.com",
+        "value": "walkerlessardihkq84@gmail.com",
         "required": true  
     },
     "fax": {
@@ -37,11 +37,11 @@
         "required": false  
     },
     "name_first": {
-        "value": "Maycie",
+        "value": "walkerless",
         "required": true  
     },
     "name_last": {
-        "value": "Ariaskkem",
+        "value": "ardihkq",
         "required": true  
     },
     "name_middle": {
@@ -53,7 +53,7 @@
         "required": false
     },
     "phone": {
-        "value": "+33.521748757",
+        "value": "+33.521172097",
         "required": true   
     }
 }
