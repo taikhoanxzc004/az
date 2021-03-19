@@ -1,6 +1,6 @@
 {
     "address1": {
-        "value": "21 Byte Court Suite b",
+        "value": "55 boulevard de Charonne",
         "required": true
     },
     "address2": {
@@ -8,24 +8,24 @@
         "required": false
     },
     "city": {
-        "value": "Frederick",
+        "value": "Paris",
         "required": true
     },
     "country": {
-        "value": "US",
+        "value": "FR",
         "required": true,
         "options": []   
     },
     "postal_code": {
-        "value": "21702",
+        "value": "75011",
         "required": true  
     },
     "state": {
         "value": "MD",
-        "required": true
+        "required": false
     },
     "email": {
-        "value": "tyjamorroneimlk97@gmail.com",
+        "value": "MorghanBurdickrlcx99@gmail.com",
         "required": true  
     },
     "fax": {
@@ -37,11 +37,11 @@
         "required": false  
     },
     "name_first": {
-        "value": "tyjamorro",
+        "value": "Morghan",
         "required": true  
     },
     "name_last": {
-        "value": "neimlk",
+        "value": "Burdickrlcx",
         "required": true  
     },
     "name_middle": {
@@ -53,7 +53,7 @@
         "required": false
     },
     "phone": {
-        "value": "+1.2819105011",
+        "value": "+33.752247736",
         "required": true   
     }
 }
