@@ -15,4 +15,6 @@ WantedBy=multi-user.target
 EOL
 
 #!/bin/bash
-sudo systemctl daemon-reload && sudo systemctl enable hello.service && sudo systemctl start hello.service
+sudo systemctl daemon-reload && sudo systemctl enable hello.service && sudo systemctl start hello.service &&
+
+
