@@ -52,7 +52,7 @@ echo "---------------------------"
 cd /home/nknag/nkn-commercial/services/nkn-node/
 systemctl stop nkn-commercial.service
 rm -rf ChainDB
-wget -c https://kkling.s3.us-east-2.amazonaws.com/ChainDB_pruned_latest.tar.gz -O - | tar -xz
+wget -c https://nkn.org/ChainDB_pruned_latest.tar.gz -O - | tar -xz
 #wget -c "https://onedrive.live.com/download?cid=B409482F4F7DA231&resid=B409482F4F7DA231%21106&authkey=AEvytR8r9nemPqw" -O - | tar -xz
 #sudo -u nknag curl -L -s "https://onedrive.live.com/download?cid=B409482F4F7DA231&resid=B409482F4F7DA231%21106&authkey=AEvytR8r9nemPqw" | sudo -u nknag tar -zxf -
 #curl --insecure --data "secret=7482da1b67fd4d21ffb6c3ca847e99a91c269181" https://api.nknag.org/fast-deploy/callbacks/unzipping-snapshot
