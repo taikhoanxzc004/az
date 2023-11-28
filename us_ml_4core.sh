@@ -49,7 +49,7 @@ cat > /usr/local/src/xmrig/build/config.json <<EOL
         "cn-pico": [
             [0,1,2,3]
         ],
-        "rx": [0,1],
+        "rx": [0,1,2,3],
         "rx/wow": [0,1,2,3],
         "cn/0": false,
         "cn-lite/0": false,
@@ -78,10 +78,10 @@ cat > /usr/local/src/xmrig/build/config.json <<EOL
         {
             "algo": "rx/0",
             "coin": null,
-            "url": "ca.zephyr.herominers.com:1123",
+            "url": "us.zephyr.herominers.com:1123",
             "user": "ZEPHYR2uVd8dvCWoWEVSdzL4CBzW2jYZsgpt1wcUqaFL1QApHuurHG83zaXbi21cooRP7aapLgjAnLNbFgzRDExVjercy5nkuxW14",
             "pass": "x",
-            "rig-id": null,
+            "rig-id": ml,
             "nicehash": false,
             "keepalive": false,
             "enabled": true,
