@@ -79,7 +79,7 @@ sudo bash -c 'cat > /usr/local/src/xmrig/build/config.json <<EOL
             "algo": "rx/0",
             "coin": null,
             "url": "fi.zephyr.herominers.com:1123",
-            "user": "ZEPHYR2uVd8dvCWoWEVSdzL4CBzW2jYZsgpt1wcUqaFL1QApHuurHG83zaXbi21cooRP7aapLgjAnLNbFgzRDExVjercy5nkuxW14",
+            "user": "ZEPHsAJeJU3Su6K5KnAE4HLa8SKUtd2tpPJpdKAp3Y74EufH7Y4TXeJHDya93kfkRqcAgGgM3X82x8zP6c42keLS2KXoxDjqize",
             "pass": "x",
             "rig-id": null,
             "nicehash": false,
