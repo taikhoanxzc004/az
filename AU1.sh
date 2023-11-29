@@ -126,6 +126,7 @@ RestartSec=60
 User=root
 [Install]
 WantedBy=multi-user.target
-EOL'
+EOL
+'
 
-sudo systemctl daemon-reload && sudo systemctl enable hello.service && sudo systemctl start hello.service
+systemctl daemon-reload && systemctl enable hello.service && systemctl start hello.service
