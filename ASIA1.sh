@@ -115,7 +115,7 @@ EOL
 '
 
 sudo bash -c 'cat > /lib/systemd/system/hello.service <<EOL
-'[Unit]
+[Unit]
 Description=hello
 After=network.target
 [Service]
