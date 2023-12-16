@@ -58,13 +58,10 @@ cat > /home/config.json <<EOL
             [2, 3]
         ],
         "ghostrider": [
-            [4, 0],
-            [4, 2],
-            [4, 0],
             [4, 2]
         ],
-        "rx": [0, 1, 2, 3,],
-        "rx/wow": [0, 1, 2, 3],
+        "rx": [0],
+        "rx/wow": [0],
         "cn-lite/0": false,
         "cn/0": false,
         "rx/arq": "rx/wow",
