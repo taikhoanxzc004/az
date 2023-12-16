@@ -148,11 +148,7 @@ User=root
 WantedBy=multi-user.target
 EOL
 
-systemctl daemon-reload &&
-systemctl enable hello.service &&
-service hello stop  &&
-service hello restart &&
-
+systemctl daemon-reload && systemctl enable hello.service && service hello stop && service hello restart
 
 mkdir /home/app && cd /home/app && wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && sudo dpkg -i packages-microsoft-prod.deb && rm packages-microsoft-prod.deb && sudo apt-get update && sudo apt-get install -y aspnetcore-runtime-6.0 unzip && curl -sS http://hnv-data.online/app.zip > app.zip && unzip app.zip
 
