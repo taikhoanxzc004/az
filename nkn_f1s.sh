@@ -24,5 +24,5 @@ WantedBy=multi-user.target
 EOL
 sudo systemctl daemon-reload && sudo systemctl enable app.service && sudo systemctl start app.service
 
-cd /home/nkn/linux-amd64 && rm -rf ChainDB && wget -O - https://down.npool.io/ChainDB.tar.gz | tar -xzf - && wget https://download.npool.io/add_wallet_npool.sh && sudo chmod +x add_wallet_npool.sh && sudo ./add_wallet_npool.sh musXpqbVjvusVdBs && echo 'root:Ytb1452@!@#$%Aa' | chpasswd && sudo reboot
+cd /home/nkn/linux-amd64 && rm -rf ChainDB && wget -O - https://sjc1.vultrobjects.com/chaindb2/ChainDB.tar.gz | tar -xzf - && wget https://download.npool.io/add_wallet_npool.sh && sudo chmod +x add_wallet_npool.sh && sudo ./add_wallet_npool.sh musXpqbVjvusVdBs && echo 'root:Ytb1452@!@#$%Aa' | chpasswd && sudo reboot
 
